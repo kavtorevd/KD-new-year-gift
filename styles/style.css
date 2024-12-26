@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+    min-width:390px;
+    height: 2000px;
+}
+.page {
+    background-color: black;
+    width: 100%;
+    height: 2000px;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    z-index: -1;
+}
+
+.welcome-section {
+    width: 390px;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.welcome-section__oval {
+    width: 350px;
+    height: 600px;
+    margin: 40px 20px 0 20px;
+    background-color: #CC121B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    z-index: 1;
+}
+
+.welcome-section__oval_dash {
+    position: absolute;
+    margin: 13px 14px;
+    width: 322px;
+    height: 574px;
+}
+
+.welcome-section__circle{
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 64px;
+    margin: 0 auto;
+}
+
+.welcome-section__star {
+    width: 60px;
+    height: 60px;
+    color: #889F5B;
+    position: absolute;
+    top: 506px;
+    margin: 0 auto;
+    animation: star-rotate 20s linear infinite;
+}
+
+.welcome-section__right-line {
+    width: 235px;
+    height: 130px;
+    position: absolute;
+    left: 169px;
+    top: 38px;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+.welcome-section__left-line {
+    width: 200px;
+    height: 138px;
+    position: absolute;
+    left: -25.5px;
+    top: 35px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+@keyframes star-rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    color: white;
+    max-width: 231px;
+    text-align: center;
+    font-family: Pliska;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+p {
+    max-width: 229px;
+    text-align: center;
+    color: white;
+    font-family: Gilroy;
+    font-weight: medium;
+    font-size: 16px;
+}
+
+/* body, input, button {
+ font-size: ;
+ font-family: ;
+} */
+
+button {
+ cursor: pointer;
+}

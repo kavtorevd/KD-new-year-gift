@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: medium;
+  src: url("./fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pliska";
+    font-style: normal;
+    font-weight: bold;
+    src: url("./fonts/Pliska-Bold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Pliska";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/Pliska-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Pliska";
+    font-style: italic;
+    font-weight: bold;
+    src: url("./fonts/Pliska-BoldItalic.woff2") format("woff2");
+  }
+
+
