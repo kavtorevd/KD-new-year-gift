@@ -5,24 +5,26 @@
   box-sizing: border-box;
 }
 body {
-    min-width:390px;
+    width: 100vw;
     height: 2000px;
 }
-.page {
+.content {
     background-color: black;
     width: 100%;
-    height: 2000px;
+    height: 200vh;
     -webkit-font-smoothing: antialiased;
     display: flex;
-    /* align-items: center; */
+    flex: 0 1 auto;
+    min-width: 390px; 
     justify-content: center;
     z-index: -1;
 }
 
 .welcome-section {
-    width: 390px;
+    width: 100%;
     height: 640px;
     display: flex;
+
     align-items: center;
     justify-content: center;
     position: relative;
@@ -30,24 +32,17 @@ body {
 }
 
 .welcome-section__oval {
-    width: 350px;
-    height: 600px;
+    width: 390px;
+    height: 640px;
     margin: 40px 20px 0 20px;
-    background-color: #CC121B;
-    border-radius: 50%;
-    display: flex;
+    background-image:url(../images/oval.png);
+    background-size: cover;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 50px;
-    z-index: 1;
-}
-
-.welcome-section__oval_dash {
-    position: absolute;
-    margin: 13px 14px;
-    width: 322px;
-    height: 574px;
+    z-index: 1; */
 }
 
 .welcome-section__circle{
@@ -64,31 +59,11 @@ body {
     width: 60px;
     height: 60px;
     color: #889F5B;
-    position: absolute;
-    top: 506px;
-    margin: 0 auto;
+    
+    margin: 60px 165px 0 165px; 
     animation: star-rotate 20s linear infinite;
 }
 
-.welcome-section__right-line {
-    width: 235px;
-    height: 130px;
-    position: absolute;
-    left: 169px;
-    top: 38px;
-    margin: 0 auto;
-    z-index: 5;
-}
-
-.welcome-section__left-line {
-    width: 200px;
-    height: 138px;
-    position: absolute;
-    left: -25.5px;
-    top: 35px;
-    margin: 0 auto;
-    z-index: 1;
-}
 
 @keyframes star-rotate{
     0%{
@@ -100,7 +75,7 @@ body {
     }
 }
 
-h1 {
+.welcome-section__title {
     color: white;
     max-width: 231px;
     text-align: center;
@@ -110,15 +85,17 @@ h1 {
     font-size: 35px;
     line-height: 1;
     letter-spacing: -0.03em;
+    margin: 234px auto 0 auto; 
 }
 
-p {
+.welcome-section__paragraph {
     max-width: 229px;
     text-align: center;
     color: white;
     font-family: Gilroy;
     font-weight: medium;
     font-size: 16px;
+    margin: 50px auto 0 auto; 
 }
 
 /* body, input, button {
