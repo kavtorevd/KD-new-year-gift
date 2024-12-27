@@ -67,15 +67,7 @@ body {
 }
 
 
-@keyframes star-rotate{
-    0%{
-        transform: rotate(0deg);
-    }
 
-    100%{
-        transform: rotate(360deg);
-    }
-}
 
 .welcome-section__title {
     color: white;
@@ -147,6 +139,125 @@ body {
     gap: 25px;
 }
 
+.vatsok-section {
+    margin-top: 56px;
+    width: 390px;
+    height: 434px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.vatsok-stars {
+    position: absolute;
+    width: 390px;
+    height: 434px;
+    background-image: url(../images/stars.svg);
+    background-size: cover;
+    animation: stars_opacity 3s ease-in-out infinite;
+}
+
+.vatsok-section__title {
+    color: #CC121B;
+    max-width: 281px;
+    text-align: center;
+    font-family: Pliska;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-top: 113px;
+}
+
+.vatsok-section__paragraph {
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    font-family: Gilroy;
+    font-weight: medium;
+    font-size: 16px;
+}
+
+.active-section {
+    background-image: url(../images/active.svg);
+    background-size: cover;
+    width: 390px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.active_p {
+    color: black;
+    text-align: center;
+    font-family: Gilroy;
+    font-weight: normal;
+    font-size: 16px;
+    width: 300px;
+    margin-top: 55px;
+}
+
+.active-section__left-row {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.active-section__right-row {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.active-section__two-rows {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.active-section__person {
+    width: 93px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    /* color: white; */
+}
+
+.person-count {
+    background-image: linear-gradient(to bottom, #313921, #889F5B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Pliska;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+.person-title{
+    color: #889F5B;
+    text-align: center;
+    font-family: Gilroy;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.red-flags-section {
+    background-image: url(../images/red_flags.svg);
+    background-size: cover;
+    width: 390px;
+    height: 259px;
+    margin-top: -18px;
+}
+
 /* body, input, button {
  font-size: ;
  font-family: ;
@@ -154,4 +265,28 @@ body {
 
 button {
  cursor: pointer;
+}
+
+@keyframes star-rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes stars_opacity{
+    0%{
+        opacity: 100%;
+    }
+
+    50%{
+        opacity: 25%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
 }
