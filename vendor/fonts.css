@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/Gilroy-SemiBold.woff") format("woff");
+}
+
+@font-face {
     font-family: "Pliska";
     font-style: normal;
     font-weight: bold;
