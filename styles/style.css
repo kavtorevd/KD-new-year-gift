@@ -82,6 +82,17 @@ body {
     margin: 234px auto 0 auto; 
 }
 
+.title {
+    color: white;
+    text-align: center;
+    font-family: Pliska;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 154px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
 .welcome-section__paragraph {
     max-width: 229px;
     text-align: center;
@@ -90,6 +101,13 @@ body {
     font-weight: medium;
     font-size: 16px;
     margin: 50px auto 0 auto; 
+}
+.paragraph {
+    text-align: center;
+    color: white;
+    font-family: Gilroy;
+    font-weight: medium;
+    font-size: 16px;
 }
 
 .number-mp-section__title {
@@ -114,7 +132,7 @@ body {
 }
 
 .flags-section {
-    background-image: url(../images/flags.png);
+    background-image: url(../images/flags.svg);
     background-size: cover;
     width: 390px;
     height: 297px;
@@ -189,6 +207,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 83px;
 }
 
 .active_p {
@@ -258,6 +277,54 @@ body {
     margin-top: -18px;
 }
 
+.urods-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 390px;
+    height: 1094px;
+}
+.urods-section__title {
+    margin: 0 auto;
+}
+.urods-section__paragraph-1 {
+    margin-top: 25px;
+    width: 300px;
+}
+
+.urods-section__paragraph-2 {
+    margin-top: 138px;
+    width: 300px;
+}
+
+.urods-section__poloska {
+    position: absolute;
+    width: 390px;
+    height: 1094px;
+    background-image: url(../images/poloska.png);
+    background-size: cover;
+    z-index: 1;
+}
+
+.urods-section__ludi {
+    position: absolute;
+    width: 390px;
+    height: 1094px;
+    background-image: url(../images/ludi.png);
+    background-size: cover;
+    z-index: 2;
+}
+
+.urods-section__19 {
+    position: relative;
+    top: 10px;
+    left: 60px;
+    font-style: normal;
+    animation: nineteen 0.6s ease-in infinite;
+}
+
+
+
 /* body, input, button {
  font-size: ;
  font-family: ;
@@ -289,4 +356,18 @@ button {
     100%{
         opacity: 100%;
     }
+}
+
+@keyframes nineteen{
+    0%{
+        color: #CC121B;
+        transform: scale(1);
+    }
+    50%{
+        color: white;
+        transform: scale(1.05);
+    }
+    100%{
+        color: #CC121B;
+        transform: scale(1);
 }
